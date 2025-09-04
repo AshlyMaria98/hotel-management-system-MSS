@@ -1,31 +1,48 @@
-# Hotel Management System (HMS) — MSS Project
+Hotel Management System (HMS) — MSS Project
 
-**Mockup-based Hotel Management System** created for MSS/DBMS lab using Jira for Agile planning (2 sprints).  
-This repository stores front-end mockups, Jira screenshots, and the final project report.
+Mockup-based Hotel Management System created as part of our DBMS/MSS project.
+This repo contains only front-end HTML/CSS/JS mockups for hotel operations such as booking, billing, staff, and reports.
 
-## 🚀 What’s Inside
-- `HTML-Mockups/` — guest forms, booking pages, staff pages, billing mockups.
-- `assets/` — images and CSS.
-- `Jira-Screenshots/` — epics, backlog, sprint boards, reports.
-- `Final-Report/` — consolidated PDF.
+🚀 Live Demo
 
-## 📁 File Highlights
-- `HTML-Mockups/guest-profile.html` — Guest profile form  
-- `HTML-Mockups/room-inventory.html` — Room availability  
-- `HTML-Mockups/booking-history.html` — Booking history table  
-- `HTML-Mockups/invoice.html` — Invoice & refund screens  
-- `Final-Report/HMS_Final_Report.pdf` — Project report with screenshots  
+👉 Hotel Management System Website
 
-## ✅ How to View
-1. **Locally** — open any `.html` file in a browser.  
-2. **Online (GitHub Pages)** — `https://<your-username>.github.io/<repo-name>/`
+📁 Project Structure
 
-## 👥 Team
-- Ashly Maria PS (Team Lead)  
-- Arsha Maria Joji 
-- Arya Selvan
-- Athulya Suresh
+html-mockups/ — Contains all HTML pages grouped by feature:
 
-## 📌 Notes
-- This project contains UI mockups only (no backend).  
-- Final report includes sprint details, acceptance criteria, and screenshots.
+Booking & Reservation → Room inventory, check-in/out, special requests, cancel booking.
+
+Customer Management → Guest profile, booking history, loyalty profile, preferences.
+
+Billing & Payment → Invoice, payment, refund.
+
+Staff Management → Role assignment, staff attendance, weekly schedule, employee profile (figma).
+
+Reports & Feedback → Occupancy & revenue, performance dashboard, feedback forms, export panel.
+
+assets/ — CSS, JS files and images used in tasks.
+
+✅ How to Use
+
+Local Preview
+
+Download/clone the repo.
+
+Open index.html in your browser to view the homepage.
+
+Navigate through links to explore each feature.
+
+Online Preview
+
+Open the live demo: https://ashlymaria98.github.io/hotel-management-system-MSS/
+
+👥 Team
+
+Ashly Maria PS (Team Lead)
+
+Arsha Maria Joji
+
+Arsha S pillai
+
+Arya Selvan
