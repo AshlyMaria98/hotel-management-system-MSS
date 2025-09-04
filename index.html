@@ -13,103 +13,58 @@
 
     h1 {
       text-align: center;
-      margin: 20px;
+      margin: 20px 0;
       color: #333;
     }
 
-    /* Navigation Section */
-    .nav-section {
+    /* Dashboard Section */
+    .section {
+      margin: 40px auto;
+      width: 80%;
       max-width: 900px;
-      margin: 0 auto 30px auto;
-      padding: 20px;
       background: #fff;
+      padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    .nav-section h2 {
-      text-align: center;
+    .section h2 {
       margin-bottom: 15px;
       color: #007bff;
     }
 
-    .nav-links {
+    .buttons {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+      gap: 15px;
     }
 
-    .nav-links a {
+    .buttons a {
+      flex: 1 1 200px;
+      text-align: center;
       background: #007bff;
       color: white;
-      padding: 10px 15px;
+      padding: 12px;
       border-radius: 6px;
       text-decoration: none;
-      font-size: 14px;
+      font-weight: bold;
       transition: background 0.3s;
     }
 
-    .nav-links a:hover {
-      background: #0056b3;
-    }
-
-    /* Forms Section */
-    .form-container {
-      display: flex;
-      gap: 40px;
-      justify-content: center;
-      margin-top: 30px;
-      padding-bottom: 40px;
-    }
-
-    form {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 300px;
-    }
-
-    label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    input {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    button {
-      margin-top: 15px;
-      width: 100%;
-      padding: 10px;
-      border: none;
-      background: #007bff;
-      color: white;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    button:hover {
+    .buttons a:hover {
       background: #0056b3;
     }
   </style>
 </head>
 <body>
 
-  <h1>Hotel Management</h1>
+  <h1>Hotel Management System</h1>
 
   <!-- Booking & Reservation -->
-  <div class="nav-section">
+  <div class="section">
     <h2>Booking & Reservation</h2>
-    <div class="nav-links">
+    <div class="buttons">
+      <a href="html-mockups/booking-and-reservation/CheckInCheckOut.html">Check-in & Check-out</a>
       <a href="html-mockups/booking-and-reservation/RoomInventory.html">Room Inventory</a>
       <a href="html-mockups/booking-and-reservation/CancelBooking.html">Cancel Booking</a>
       <a href="html-mockups/booking-and-reservation/SpecialRequest.html">Special Request</a>
@@ -117,9 +72,9 @@
   </div>
 
   <!-- Billing & Payment -->
-  <div class="nav-section">
+  <div class="section">
     <h2>Billing & Payment</h2>
-    <div class="nav-links">
+    <div class="buttons">
       <a href="html-mockups/billing-and-payment/invoice%20final.html">Invoice Final</a>
       <a href="html-mockups/billing-and-payment/invoice%20mockup.html">Invoice Mockup</a>
       <a href="html-mockups/billing-and-payment/payment.html">Payment</a>
@@ -128,9 +83,9 @@
   </div>
 
   <!-- Customer Management -->
-  <div class="nav-section">
+  <div class="section">
     <h2>Customer Management</h2>
-    <div class="nav-links">
+    <div class="buttons">
       <a href="html-mockups/customer-management/index.html">Customer Home</a>
       <a href="html-mockups/customer-management/bookinghistory.html">Booking History</a>
       <a href="html-mockups/customer-management/loyaltyprofile.html">Loyalty Profile</a>
@@ -139,9 +94,9 @@
   </div>
 
   <!-- Staff Management -->
-  <div class="nav-section">
+  <div class="section">
     <h2>Staff Management</h2>
-    <div class="nav-links">
+    <div class="buttons">
       <a href="html-mockups/staff-management/Role%20Assignment%20Form.html">Role Assignment</a>
       <a href="html-mockups/staff-management/Staff%20Attendance.html">Staff Attendance</a>
       <a href="html-mockups/staff-management/Weekly%20Staff%20Schedule.html">Weekly Schedule</a>
@@ -149,53 +104,14 @@
   </div>
 
   <!-- Reports & Feedback -->
-  <div class="nav-section">
+  <div class="section">
     <h2>Reports & Feedback</h2>
-    <div class="nav-links">
+    <div class="buttons">
       <a href="html-mockups/reports-and-feedback/task1.html">Report Task 1</a>
       <a href="html-mockups/reports-and-feedback/task2.html">Report Task 2</a>
       <a href="html-mockups/reports-and-feedback/task3.html">Report Task 3</a>
       <a href="html-mockups/reports-and-feedback/task4%20.html">Report Task 4</a>
     </div>
-  </div>
-
-  <!-- Forms Section -->
-  <div class="form-container">
-    <!-- Check-in Form -->
-    <form>
-      <h2>Check-in Form</h2>
-      <label for="guestNameIn">Guest Name</label>
-      <input type="text" id="guestNameIn" placeholder="Enter Guest Name">
-
-      <label for="guestIdIn">Guest ID</label>
-      <input type="text" id="guestIdIn" placeholder="Enter Guest ID">
-
-      <label for="roomNoIn">Room No</label>
-      <input type="text" id="roomNoIn" placeholder="Enter Room Number">
-
-      <label for="checkInDate">Check-in Date</label>
-      <input type="date" id="checkInDate">
-
-      <button type="submit">Submit Check-in</button>
-    </form>
-
-    <!-- Check-out Form -->
-    <form>
-      <h2>Check-out Form</h2>
-      <label for="guestNameOut">Guest Name</label>
-      <input type="text" id="guestNameOut" placeholder="Enter Guest Name">
-
-      <label for="guestIdOut">Guest ID</label>
-      <input type="text" id="guestIdOut" placeholder="Enter Guest ID">
-
-      <label for="roomNoOut">Room No</label>
-      <input type="text" id="roomNoOut" placeholder="Enter Room Number">
-
-      <label for="checkOutDate">Check-out Date</label>
-      <input type="date" id="checkOutDate">
-
-      <button type="submit">Submit Check-out</button>
-    </form>
   </div>
 
 </body>
