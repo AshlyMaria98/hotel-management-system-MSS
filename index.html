@@ -11,28 +11,50 @@
       padding: 0;
     }
 
-    /* Navbar */
-    .navbar {
-      background: #007bff;
-      padding: 12px;
-      text-align: center;
-    }
-    .navbar a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .navbar a:hover {
-      text-decoration: underline;
-    }
-
     h1 {
       text-align: center;
       margin: 20px;
       color: #333;
     }
 
+    /* Navigation Section */
+    .nav-section {
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .nav-section h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      background: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: #0056b3;
+    }
+
+    /* Forms Section */
     .form-container {
       display: flex;
       gap: 40px;
@@ -82,40 +104,63 @@
 </head>
 <body>
 
- <nav>
+  <h1>Hotel Management</h1>
+
   <!-- Booking & Reservation -->
-  <a href="html-mockups/booking-and-reservation/RoomInventory.html">Room Inventory</a>
-  <a href="html-mockups/booking-and-reservation/CancelBooking.html">Cancel Booking</a>
-  <a href="html-mockups/booking-and-reservation/SpecialRequest.html">Special Request</a>
+  <div class="nav-section">
+    <h2>Booking & Reservation</h2>
+    <div class="nav-links">
+      <a href="html-mockups/booking-and-reservation/RoomInventory.html">Room Inventory</a>
+      <a href="html-mockups/booking-and-reservation/CancelBooking.html">Cancel Booking</a>
+      <a href="html-mockups/booking-and-reservation/SpecialRequest.html">Special Request</a>
+    </div>
+  </div>
 
   <!-- Billing & Payment -->
-  <a href="html-mockups/billing-and-payment/invoice%20final.html">Invoice Final</a>
-  <a href="html-mockups/billing-and-payment/invoice%20mockup.html">Invoice Mockup</a>
-  <a href="html-mockups/billing-and-payment/payment.html">Payment</a>
-  <a href="html-mockups/billing-and-payment/refund.html">Refund</a>
+  <div class="nav-section">
+    <h2>Billing & Payment</h2>
+    <div class="nav-links">
+      <a href="html-mockups/billing-and-payment/invoice%20final.html">Invoice Final</a>
+      <a href="html-mockups/billing-and-payment/invoice%20mockup.html">Invoice Mockup</a>
+      <a href="html-mockups/billing-and-payment/payment.html">Payment</a>
+      <a href="html-mockups/billing-and-payment/refund.html">Refund</a>
+    </div>
+  </div>
 
   <!-- Customer Management -->
-  <a href="html-mockups/customer-management/index.html">Customer Home</a>
-  <a href="html-mockups/customer-management/bookinghistory.html">Booking History</a>
-  <a href="html-mockups/customer-management/loyaltyprofile.html">Loyalty Profile</a>
-  <a href="html-mockups/customer-management/preferences.html">Preferences</a>
+  <div class="nav-section">
+    <h2>Customer Management</h2>
+    <div class="nav-links">
+      <a href="html-mockups/customer-management/index.html">Customer Home</a>
+      <a href="html-mockups/customer-management/bookinghistory.html">Booking History</a>
+      <a href="html-mockups/customer-management/loyaltyprofile.html">Loyalty Profile</a>
+      <a href="html-mockups/customer-management/preferences.html">Preferences</a>
+    </div>
+  </div>
 
   <!-- Staff Management -->
-  <a href="html-mockups/staff-management/Role%20Assignment%20Form.html">Role Assignment</a>
-  <a href="html-mockups/staff-management/Staff%20Attendance.html">Staff Attendance</a>
-  <a href="html-mockups/staff-management/Weekly%20Staff%20Schedule.html">Weekly Schedule</a>
+  <div class="nav-section">
+    <h2>Staff Management</h2>
+    <div class="nav-links">
+      <a href="html-mockups/staff-management/Role%20Assignment%20Form.html">Role Assignment</a>
+      <a href="html-mockups/staff-management/Staff%20Attendance.html">Staff Attendance</a>
+      <a href="html-mockups/staff-management/Weekly%20Staff%20Schedule.html">Weekly Schedule</a>
+    </div>
+  </div>
 
   <!-- Reports & Feedback -->
-  <a href="html-mockups/reports-and-feedback/task1.html">Report Task 1</a>
-  <a href="html-mockups/reports-and-feedback/task2.html">Report Task 2</a>
-  <a href="html-mockups/reports-and-feedback/task3.html">Report Task 3</a>
-  <a href="html-mockups/reports-and-feedback/task4%20.html">Report Task 4</a>
-</nav>
+  <div class="nav-section">
+    <h2>Reports & Feedback</h2>
+    <div class="nav-links">
+      <a href="html-mockups/reports-and-feedback/task1.html">Report Task 1</a>
+      <a href="html-mockups/reports-and-feedback/task2.html">Report Task 2</a>
+      <a href="html-mockups/reports-and-feedback/task3.html">Report Task 3</a>
+      <a href="html-mockups/reports-and-feedback/task4%20.html">Report Task 4</a>
+    </div>
+  </div>
 
-
-  <h1>Hotel Management</h1>
+  <!-- Forms Section -->
   <div class="form-container">
-
     <!-- Check-in Form -->
     <form>
       <h2>Check-in Form</h2>
@@ -151,7 +196,6 @@
 
       <button type="submit">Submit Check-out</button>
     </form>
-
   </div>
 
 </body>
