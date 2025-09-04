@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoice Mockup</title>
+  <style>
+    :root {
+      --border: #ccc;
+      --primary: #222;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .invoice {
+      background: #fff;
+      width: 400px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .invoice h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .row {
+      display: flex;
+      justify-content: flex-start; /* keep text close */
+      gap: 10px; /* small space between label and line */
+      border-bottom: 1px dashed var(--border);
+      padding: 10px 0;
+    }
+
+    .label {
+      font-weight: bold;
+      min-width: 100px;
+    }
+
+    .total {
+      font-weight: bold;
+      text-align: right;
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice">
+    <h2>Invoice</h2>
+
+    <div class="row"><span class="label">Guest:</span><span>______</span></div>
+    <div class="row"><span class="label">Room:</span><span>______</span></div>
+    <div class="row"><span class="label">Check-in:</span><span>______</span></div>
+    <div class="row"><span class="label">Check-out:</span><span>______</span></div>
+    <div class="row"><span class="label">Charges:</span><span>______</span></div>
+
+    <div class="total">Total: ____</div>
+  </div>
+</body>
+</html>

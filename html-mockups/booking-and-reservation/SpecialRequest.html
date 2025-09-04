@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Management - Special Requests</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 380px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .options {
+      margin-top: 10px;
+    }
+    .options input {
+      margin-right: 8px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #28a745;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Special Requests</h2>
+
+    <label>Please select your requests:</label>
+    <div class="options">
+      <input type="checkbox" id="ac" name="requests" value="AC Room">
+      <label for="ac">AC Room</label><br>
+
+      <input type="checkbox" id="suite" name="requests" value="Suite">
+      <label for="suite">Suite</label><br>
+
+      <input type="checkbox" id="extraBed" name="requests" value="Extra Bed">
+      <label for="extraBed">Extra Bed</label><br>
+
+      <input type="checkbox" id="lateCheckout" name="requests" value="Late Checkout">
+      <label for="lateCheckout">Late Checkout</label>
+    </div>
+
+    <button type="submit">Save Requests</button>
+  </form>
+
+</body>
+</html>

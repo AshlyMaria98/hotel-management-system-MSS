@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Performance Dashboard</title>
+<link rel="stylesheet" href="task3_styles.css">
+</head>
+<body>
+
+<h1>Hotel Performance Dashboard</h1>
+
+<div class="dashboard">
+    <!-- Staff Efficiency -->
+    <div class="widget">
+        <h2>Staff Efficiency</h2>
+        <div class="progress">
+            <div class="progress-bar">75%</div>
+        </div>
+    </div>
+
+    <!-- Booking Trend -->
+    <div class="widget">
+        <h2>Booking Trend</h2>
+        <canvas id="bookingChart"></canvas>
+    </div>
+
+    <!-- Top Rooms -->
+    <div class="widget">
+        <h2>Top Rooms</h2>
+        <ul>
+            <li>Room 101 - 95% booked</li>
+            <li>Room 202 - 90% booked</li>
+            <li>Room 305 - 88% booked</li>
+            <li>Room 404 - 85% booked</li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="task3-script.js"></script>
+</body>
+</html>

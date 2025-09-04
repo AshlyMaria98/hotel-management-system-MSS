@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Management - Check-in & Check-out</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .form-container {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hotel Management</h1>
+  <div class="form-container">
+
+    <!-- Check-in Form -->
+    <form>
+      <h2>Check-in Form</h2>
+      <label for="guestNameIn">Guest Name</label>
+      <input type="text" id="guestNameIn" placeholder="Enter Guest Name">
+
+      <label for="guestIdIn">Guest ID</label>
+      <input type="text" id="guestIdIn" placeholder="Enter Guest ID">
+
+      <label for="roomNoIn">Room No</label>
+      <input type="text" id="roomNoIn" placeholder="Enter Room Number">
+
+      <label for="checkInDate">Check-in Date</label>
+      <input type="date" id="checkInDate">
+
+      <button type="submit">Submit Check-in</button>
+    </form>
+
+    <!-- Check-out Form -->
+    <form>
+      <h2>Check-out Form</h2>
+      <label for="guestNameOut">Guest Name</label>
+      <input type="text" id="guestNameOut" placeholder="Enter Guest Name">
+
+      <label for="guestIdOut">Guest ID</label>
+      <input type="text" id="guestIdOut" placeholder="Enter Guest ID">
+
+      <label for="roomNoOut">Room No</label>
+      <input type="text" id="roomNoOut" placeholder="Enter Room Number">
+
+      <label for="checkOutDate">Check-out Date</label>
+      <input type="date" id="checkOutDate">
+
+      <button type="submit">Submit Check-out</button>
+    </form>
+
+  </div>
+
+</body>
+</html>

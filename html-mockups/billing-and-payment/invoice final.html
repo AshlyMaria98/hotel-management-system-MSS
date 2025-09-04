@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Method</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    .option { margin: 15px; font-size: 18px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Choose Payment Method</h2>
+  
+  <div class="option"><input type="radio" name="pay" value="cash"> Cash</div>
+  <div class="option"><input type="radio" name="pay" value="upi"> UPI</div>
+  <div class="option"><input type="radio" name="pay" value="card"> Credit/Debit Card</div>
+  
+  <button onclick="showPayment()">Proceed</button>
+
+  <script>
+    function showPayment() {
+      let method = document.querySelector('input[name="pay"]:checked');
+      if (method) {
+        alert("You selected: " + method.value);
+      } else {
+        alert("Please select a payment method first.");
+      }
+    }
+  </script>
+</body>
+</html>

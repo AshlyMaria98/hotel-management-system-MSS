@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refund Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f9f9f9;
+    }
+    .refund-container {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    .refund-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .refund-container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .refund-container input, 
+    .refund-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .refund-container button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .refund-container button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="refund-container">
+    <h2>Refund Form</h2>
+    <form>
+      <label for="bookingID">Booking ID:</label>
+      <input type="text" id="bookingID" placeholder="Enter Booking ID">
+
+      <label for="amount">Refund Amount:</label>
+      <input type="text" id="amount" placeholder="Enter Amount">
+
+      <label for="reason">Reason for Cancellation:</label>
+      <textarea id="reason" rows="3" placeholder="Enter Reason"></textarea>
+
+      <button type="button">Submit Refund</button>
+    </form>
+  </div>
+</body>
+</html>

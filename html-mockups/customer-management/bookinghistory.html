@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking History View</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+    table {
+      border-collapse: collapse;
+      width: 85%;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #007bff;
+      color: white;
+    }
+    .completed { background: #d4edda; color: green; font-weight: bold; }
+    .cancelled { background: #f8d7da; color: red; font-weight: bold; }
+    .ongoing { background: #fff3cd; color: orange; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Booking ID</th>
+      <th>Guest Name</th>
+      <th>Check-in</th>
+      <th>Check-out</th>
+      <th>Room</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>B001</td>
+      <td>John Mathew</td>
+      <td>01/08/25</td>
+      <td>03/08/25</td>
+      <td>101</td>
+      <td class="completed">Completed</td>
+    </tr>
+    <tr>
+      <td>B002</td>
+      <td>Sarah Paul</td>
+      <td>05/08/25</td>
+      <td>07/08/25</td>
+      <td>203</td>
+      <td class="cancelled">Cancelled</td>
+    </tr>
+    <tr>
+      <td>B003</td>
+      <td>Alan Jose</td>
+      <td>10/08/25</td>
+      <td>12/08/25</td>
+      <td>305</td>
+      <td class="ongoing">Ongoing</td>
+    </tr>
+    <tr>
+      <td>B004</td>
+      <td>Mary Thomas</td>
+      <td>15/08/25</td>
+      <td>18/08/25</td>
+      <td>202</td>
+      <td class="completed">Completed</td>
+    </tr>
+    <tr>
+      <td>B005</td>
+      <td>Ravi Kumar</td>
+      <td>20/08/25</td>
+      <td>22/08/25</td>
+      <td>310</td>
+      <td class="completed">Completed</td>
+    </tr>
+    <tr>
+      <td>B006</td>
+      <td>Anjali Nair</td>
+      <td>25/08/25</td>
+      <td>27/08/25</td>
+      <td>107</td>
+      <td class="ongoing">Ongoing</td>
+    </tr>
+  </table>
+</body>
+</html>

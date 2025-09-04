@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Preferences Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    select, input {
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Preferences</h2>
+    
+    <label for="room">Room Type:</label>
+    <select id="room">
+      <option>AC</option>
+      <option>Non-AC</option>
+      <option>Suite</option>
+    </select>
+
+    <label>Food Preference:</label>
+    <input type="radio" name="food" value="Veg"> Veg <br>
+    <input type="radio" name="food" value="Non-Veg"> Non-Veg <br>
+    <input type="radio" name="food" value="Vegan"> Vegan <br>
+
+    <button type="submit">Save</button>
+  </form>
+</body>
+</html>

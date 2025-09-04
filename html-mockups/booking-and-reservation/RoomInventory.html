@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Inventory</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: #333;
+      color: white;
+    }
+    .vacant {
+      background: #d4f8d4; /* light green */
+      color: green;
+      font-weight: bold;
+    }
+    .occupied {
+      background: #ffd6d6; /* light red */
+      color: red;
+      font-weight: bold;
+    }
+    .reserved {
+      background: #fff6d6; /* light yellow */
+      color: orange;
+      font-weight: bold;
+    }
+    .legend {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .legend span {
+      display: inline-block;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏨 Room Inventory</h1>
+  <table>
+    <tr>
+      <th>Room No</th>
+      <th>Type</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>Single</td>
+      <td class="vacant">Vacant</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Double</td>
+      <td class="occupied">Occupied</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Suite</td>
+      <td class="reserved">Reserved</td>
+    </tr>
+  </table>
+
+  <div class="legend">
+    <span style="color:green;">🟢 Vacant</span>
+    <span style="color:red;">🔴 Occupied</span>
+    <span style="color:orange;">🟡 Reserved</span>
+  </div>
+</body>
+</html>

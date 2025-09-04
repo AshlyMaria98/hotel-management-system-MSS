@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Management - Cancel Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #dc3545;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #a71d2a;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Cancel Booking</h2>
+
+    <label for="bookingId">Booking ID</label>
+    <input type="text" id="bookingId" placeholder="Enter Booking ID">
+
+    <label for="guestId">Guest ID</label>
+    <input type="text" id="guestId" placeholder="Enter Guest ID">
+
+    <label for="reason">Reason for Cancellation</label>
+    <select id="reason">
+      <option value="">-- Select Reason --</option>
+      <option value="change">Change of plans</option>
+      <option value="emergency">Personal emergency</option>
+      <option value="price">Found cheaper option</option>
+    </select>
+
+    <button type="submit">Confirm Cancellation</button>
+  </form>
+
+</body>
+</html>

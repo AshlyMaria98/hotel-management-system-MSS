@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Role Assignment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      color: #333;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .button {
+      width: 100%;
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Role Assignment Form</h2>
+  <form>
+    <div class="section">
+      <label for="fullName">Employee Name:</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="employeeId">Employee ID:</label>
+      <input type="text" id="employeeId" name="employeeId" required />
+    </div>
+
+    <div class="section">
+      <label for="role">Select Role:</label>
+      <select id="role" name="role" required>
+        <option value="">-- Select Role --</option>
+        <option value="Receptionist">Receptionist</option>
+        <option value="Housekeeping">Housekeeping</option>
+        <option value="Manager">Manager</option>
+      </select>
+      </select><br><br>
+
+    <label for="startDate">Date of Assignment:</label><br>
+    <input type="date" id="startDate" name="startDate"><br><br>
+
+    <div class="section">
+      <label for="assignedBy">Assigned By:</label>
+      <input type="text" id="assignedBy" name="assignedBy" />
+    </div>
+
+    <button type="assign role" class="button">Assign Role</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Occupancy & Revenue Report</title>
+<link rel="stylesheet" href="task1-styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Hotel Occupancy & Revenue Report</h1>
+
+    <!-- Cards -->
+    <div class="report">
+        <div class="card">
+            <h2>Occupancy (%)</h2>
+            <div class="value" id="occupancy">75%</div>
+            <div class="bar-chart" id="occupancy-chart"></div>
+        </div>
+
+        <div class="card">
+            <h2>Revenue ($)</h2>
+            <div class="value" id="revenue">$12,500</div>
+            <div class="bar-chart" id="revenue-chart"></div>
+        </div>
+    </div>
+
+    <!-- Weekly Report Table -->
+    <h2>Weekly Report</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Occupancy (%)</th>
+                <th>Revenue ($)</th>
+            </tr>
+        </thead>
+        <tbody id="weekly-report">
+            <!-- Rows added by JS -->
+        </tbody>
+    </table>
+
+    <!-- Monthly Report Table -->
+    <h2>Monthly Report</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Occupancy (%)</th>
+                <th>Revenue ($)</th>
+            </tr>
+        </thead>
+        <tbody id="monthly-report">
+            <!-- Rows added by JS -->
+        </tbody>
+    </table>
+</div>
+
+<script src="task1_script.js"></script>
+</body>
+</html>
